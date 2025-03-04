@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3 Praktikum</title>
+</head>
+<body>
+    <p>
+        Nama : <input type="text" name="username" required minlength="5" maxlength="25">
+        <br>
+        Email : <input type="email" name="email" required>
+        <br>
+        Jenis Kelamin : 
+        <label>
+            <input type="radio" name="gender" value="Male"> Laki-Laki
+        </label>
+        <label>
+            <input type="radio" name="gender" value="Female"> perempuan
+        </label>
+        <br>
+        Hobi :
+        <label>
+            <input type="checkbox" name="Hobi" value="Musik"> Musik
+        </label>
+        <label>
+            <input type="checkbox" name="Hobi" value="Olahraga"> Olahraga
+        </label>
+        <br>
+        Pilih Kota : 
+        <select name="PilihKota">
+            <option value="1">Jakarta</option>
+            <option value="2">Sukabumi</option>
+            <option value="3">Karawang</option>
+            <option value="4">Bekasi</option>
+            <option value="5">Cikarang</option>            
+        </select>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for ="file">Upload Foto :</label>
+            <input type="file" id ="file" name="file">
+            <br>
+            <button type="Daftar" onclick="alert('Sukses Mendaftar!')">Daftar</button>
+        </form>
+    </p>
+</body>
+</html>
