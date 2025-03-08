@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Singaperbangsa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website Sederhana</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href = "#">Beranda</a></li>
+            <li><a href = "#">Tentang</a></li>
+            <li><a href = "#">Layanan</a></li>
+            <li><a href = "#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="content">
+        <h2>Formulir Pendaftaran</h2>
+        <p>
+            Silahkan isi formulir di bawah ini untuk mendaftar.
+        </p>
+        <div class="formulir">
+            <div class="text-wrapper">
+                <label for="nama"><b>Nama Lengkap:</b></label><br>
+                <input type="text" name="nama lengkap" id="input"><br>
+                <label for="email"><b>Email:</b></label><br>
+                <input type="email" name="email" id="input"><br>
+                <label for="pass"><b>Password:</b></label><br>
+                <input type="password" name="password" id="input"><br>
+            </div>
+            <div class="text-wrapper">
+                <label><b>Jenis Kelamin:</b><br>
+                    <input type="radio" name="gender" value="male"><br><b>Laki-laki</b><br>
+                    <input type="radio" name="gender" value="female"><br><b>Perempuan</b>
+                </label><br>
+            </div>
+            <div class="text-wrapper">
+                <label><b>Hobi:</b><br>
+                    <input type="checkbox" name="Hobi" value="musik"><br><b>Musik</b><br>
+                    <input type="checkbox" name="Hobi" value="olahraga"><br><b>Olahraga</b><br>
+                    <input type="checkbox" name="Hobi" value="membaca"><br><b>Membaca</b><br>
+                </label>
+            </div>
+            <div class="text-wrapper">
+                <label><b>Pilih Kota:</b><br>
+                    <select name="asal-kota">
+                        <option value="1">Bikini Bottom</option>
+                        <option value="2">Krusty Krab</option>
+                        <option value="3">Chum Bucket</option>
+                        <option value="4">Goo Lagoons</option>
+                        <option value="5">Rock Bottom</option>
+                    </select>
+                </label>
+            </div>
+            <div class="text-wrapper">
+                <p>
+                    <b>Pesan Tambahan:</b><br>
+                    <textarea name="pesan" id="pesan" rows="4" cols="50" placeholder="tulis pesan di sini"></textarea><br>
+                    <button type="submit" onclick="alert('Sukses Mendaftar!')">Kirim</button>
+                </p>
+            </div>            
+        </div>
+        </section>
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Bagian Sidebar dapat berisi tautan, iklan, atau informasi tambahan</p>
+        </aside>
+    </div>
+
+
+</body>
+</html>

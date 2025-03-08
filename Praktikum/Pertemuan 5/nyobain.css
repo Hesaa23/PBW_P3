@@ -1,0 +1,16 @@
+.external-css{
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    margin: 0;
+    padding: 20px;
+}
+
+#external-css1{
+    color: navy;
+    text-align: center;
+}
+
+#external-css2{
+    font-size: 16px;
+    color: black;
+}
