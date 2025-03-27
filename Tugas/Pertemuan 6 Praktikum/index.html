@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 6</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="judul">Program Menghitung Nilai & Huruf Mutu</h1>
+    </header>
+
+    <div class="container">
+      <section class="content">
+        <h2>Silahkan Input NPM</h2>
+        <div class="formulir">
+          <div class="text-wrapper">
+            <label for="NPM"><b>NPM :</b></label
+            ><br />
+            <input type="text" name="NPM" /><br />
+            <label for="nilai"><b>Nilai :</b></label
+            ><br />
+            <input type="number" name="nilai" id="inputan" /><br />
+            <button type="submit" onclick="hitung()" id="btn-hitung">
+              Hitung
+            </button>
+          </div>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <h2>Hasil Nilai</h2>
+        <div class="text-wrapper">
+          <p>
+            Nilai : <span id="nilai"></span><br />
+            Huruf Mutu : <span id="huruf"></span>
+          </p>
+        </div>
+      </aside>
+    </div>
+    <script>
+      function hitung() {
+        let inputan = parseInt(document.getElementById("inputan").value);
+        let huruf
+        if (inputan > 100 || inputan < 0) {
+          alert("Nilai Tidak Valid!");
+        } else if (inputan >= 80 && inputan <= 100) {
+            huruf ="A";
+            alert("Huruf Mutu = " + huruf);
+        } else if (inputan >= 70 && inputan <= 79) {
+            huruf ="B";
+            alert("Huruf Mutu = " + huruf);
+        } else if (inputan >= 60 && inputan <= 69) {
+            huruf ="C";
+            alert("Huruf Mutu = " + huruf)
+        } else if (inputan >= 50 && inputan <= 59) {
+            huruf ="D";
+            alert("Huruf Mutu = " + huruf)
+        } else if (inputan == 0 && inputan <= 49) {
+            huruf ="E";
+            alert("Huruf Mutu = " + huruf)
+        }
+
+        document.getElementById("nilai").innerHTML =
+          document.getElementById("inputan").value;
+        document.getElementById("huruf").innerHTML =
+          huruf;
+      }
+    </script>
+  </body>
+</html>
